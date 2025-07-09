@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Bloom & Bliss</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        color: #333;
+        background-color: #fffaf9;
+      }
+
+      header {
+        background-color: #f8e8e0;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      header h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+        color: #a14c4c;
+        margin: 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        margin-left: 20px;
+        color: #6a4e4e;
+        font-weight: 600;
+      }
+
+      .shop-hero {
+        background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+        background-size: cover;
+        background-position: center;
+        padding: 80px 20px 40px 20px;
+        text-align: center;
+        color: white;
+      }
+
+      .shop-hero h2 {
+        font-size: 40px;
+        font-family: "Playfair Display", serif;
+        margin-bottom: 10px;
+      }
+
+      .shop-hero p {
+        font-size: 18px;
+      }
+
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        padding: 40px 20px;
+      }
+
+      .product-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(161, 76, 76, 0.08);
+        width: 260px;
+        padding: 24px 16px 16px 16px;
+        text-align: center;
+        transition: box-shadow 0.3s;
+      }
+      .product-card:hover {
+        box-shadow: 0 4px 16px rgba(161, 76, 76, 0.15);
+      }
+      .product-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 16px;
+      }
+      .product-card h4 {
+        font-family: "Playfair Display", serif;
+        color: #a14c4c;
+        margin: 10px 0 6px 0;
+        font-size: 22px;
+      }
+      .product-card p {
+        font-size: 15px;
+        color: #6a4e4e;
+        margin-bottom: 10px;
+      }
+      .price {
+        font-weight: bold;
+        color: #a14c4c;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .btn {
+        background-color: #a14c4c;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 10px;
+        transition: background 0.3s;
+      }
+      .btn:hover {
+        background-color: #8b3e3e;
+      }
+
+      .footer {
+        background-color: #f1dfda;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #6a4e4e;
+      }
+
+      @media (max-width: 700px) {
+        .products {
+          flex-direction: column;
+          align-items: center;
+        }
+        .product-card {
+          width: 90%;
+        }
+        .shop-hero h2 {
+          font-size: 28px;
+        }
+        nav a {
+          margin-left: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Bloom & Bliss</h1>
+      <nav>
+        <a href="/Home.html">Home</a>
+        <a href="/shop.html">Shop</a>
+        <a href="/About.html">About</a>
+        <a href="#">Contact Us</a>
+      </nav>
+    </header>
+
+    <section class="shop-hero">
+      <h2>Shop Our Bouquets</h2>
+      <p>Discover our curated selection of fresh, beautiful flowers for every occasion.</p>
+    </section>
+
+    <section class="products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca" alt="Rose Bouquet" />
+        <h4>Rose Romance</h4>
+        <p>Classic red roses, hand-tied for your special someone.</p>
+        <div class="price">$39.99</div>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9" alt="Sunflower Joy" />
+        <h4>Sunflower Joy</h4>
+        <p>Bright sunflowers to bring a smile to anyone's day.</p>
+        <div class="price">$29.99</div>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b" alt="Spring Mix" />
+        <h4>Spring Mix</h4>
+        <p>A vibrant mix of seasonal blooms, perfect for any occasion.</p>
+        <div class="price">$34.99</div>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904" alt="Lily Elegance" />
+        <h4>Lily Elegance</h4>
+        <p>Elegant white lilies for a touch of sophistication.</p>
+        <div class="price">$36.99</div>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </section>
+
+    <div class="footer">© 2025 Bloom & Bliss. All rights reserved.</div>
+  </body>
+</html>
